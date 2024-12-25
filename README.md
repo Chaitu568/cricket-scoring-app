@@ -1,1 +1,1 @@
-# cricket-scoring-app
+# scorer_web

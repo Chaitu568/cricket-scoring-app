@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Display</title>
+    <!-- Link to your CSS file -->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Row with "1" buttons and "WD", "NB" indicators -->
+        <div class="top-row">
+            <button class="button green" id="button1-left">1</button>
+            <button class="button grey" id="button-wd">WD</button>
+            <button class="button grey" id="button-nb">NB</button>
+            <button class="button green" id="button1-right">1</button>
+        </div>
+
+        <!-- Middle Row with "2" buttons and "NO RUN" indicator -->
+        <div class="middle-row">
+            <button class="button green" id="button2-left">2</button>
+            <div class="indicator" id="no-run">NO RUN</div>
+            <button class="button green" id="button2-right">2</button>
+        </div>
+
+        <!-- Center Row with "1" buttons and action indicators "BWD", "CO", "RO" -->
+        <div class="center-row">
+            <button class="button green" id="button1-bottom-left">1</button>
+            <button class="button pink" id="button-bwd">BWD</button>
+            <button class="button pink" id="button-co">CO</button>
+            <button class="button pink" id="button-ro">RO</button>
+            <button class="button green" id="button1-bottom-right">1</button>
+        </div>
+
+        <!-- Bottom Row with "2" buttons -->
+        <div class="bottom-row-2">
+            <button class="button green" id="button2-bottom-left">2</button>
+            <button class="button green" id="button2-bottom-right">2</button>
+        </div>
+
+        <!-- Bottom-most Row with "6" and "4" score buttons -->
+        <div class="bottom-row-scores">
+            <button class="button diamond yellow" id="score-6-left">6</button>
+            <button class="button diamond blue" id="score-4-left">4</button>
+            <button class="button diamond yellow" id="score-6-center">6</button>
+            <button class="button diamond blue" id="score-4-right">4</button>
+            <button class="button diamond yellow" id="score-6-right">6</button>
+            <button class="button diamond blue" id="score-4-far-right">4</button>
+        </div>
+    </div>
+
+    <!-- Your JavaScript file -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
